@@ -19,5 +19,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+      {
+    resolve: `gatsby-source-strapi`,
+    options: {
+      apiURL: `https://backendportfoli.herokuapp.com`,
+      queryLimit: 1000, // Defaults to 100
+      contentTypes: [`job`],
+      
+    },
+  },
   ],
 }

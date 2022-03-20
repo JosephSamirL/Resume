@@ -25,6 +25,7 @@ module.exports = {
       apiURL: `https://backendportfoli.herokuapp.com`,
       queryLimit: 1000, // Defaults to 100
       contentTypes: [`job`,`project`],
+      singleTypes: [`about`],
       
     },
   },

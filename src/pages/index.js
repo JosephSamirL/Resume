@@ -12,7 +12,7 @@ const IndexPage = ({data}) => {
     <>
       <main>
         <Hero/>
-        <Services/>
+        {/* <Services/> */}
         <Jobs/>
         <Projects title="featured projects" showLink projects={projects}/>
       </main>

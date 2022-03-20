@@ -3,12 +3,12 @@ import logo from "../assets/images/logo.svg"
 import { FaAlignRight } from "react-icons/fa"
 import pageLinks from "../constants/links"
 import { Link } from "gatsby"
-const Navbar = () => {
+const Navbar = ({toggleSideBar}) => {
   return <nav className="navbar">
     <div className="nav-center">
       <div className="nav-header">
         <img src={logo} alt="Joe Dev"/>
-        <button type="button" className="toggle-btn">
+        <button onClick={toggleSideBar} type="button" className="toggle-btn">
           <FaAlignRight/>
         </button>
       </div>
